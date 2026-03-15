@@ -1,6 +1,6 @@
-# Power-Outage-Analysis
+# Investigating Major Power Outages Across the U.S.
 
-##Introduction
+#Introduction
 
 In this Project I will explore data on major power outage events in the continental U.S. The data is from major power outages witnessed by various states during January 2000-July 2016. The outages dataset contains outages that impacted at least 50,000 customers or caused an unplanned firm load loss of at least 300 MW. The dataset also contains various factors such as geographical locations, electricity consumption, economic characteristics, causes, and regional climatic info.
 
