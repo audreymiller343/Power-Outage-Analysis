@@ -1,4 +1,4 @@
-# Investigating Major Power Outages Across the U.S.
+# A Data Analysis of Power Outages
 
 # Introduction
 
