@@ -70,7 +70,6 @@ I also looked at how the number of outages changed in each climate region.
   height="600"
   frameborder="0"
 ></iframe>
-
 ### Bivariate Analysis
 For the bivariate analysis I tested how different features affected each other but the ones I found most interesting are found below. 
 For the first graph I looked at the relationship between outage duration and number of customers affected to examine their relationship. 
@@ -131,7 +130,6 @@ The plot below shows the empirical distribution of the permutation test statisti
   height="600"
   frameborder="0"
 ></iframe>
-
 ## Test 2: OUTAGE.DURATION Missingness vs. CAUSE.CATEGORY
 
 ### Null Hypothesis:
@@ -156,7 +154,6 @@ The plot below shows the empirical distribution of TVD statistics from out permu
   height="600"
   frameborder="0"
 ></iframe>
-
 # Hypothesis Testing
 In order to determine whether certain climate regions experience higher frequency of severe weather outages I performed a permutation test comparing the proportion of severe weather outages across all climate regions. This question is important since different regions across the U.S. have vastly different weather patterns, infrastructure, and geographic characteristics. If certain regions experience more severe outages this could help utility companies better handle resources and prepare for these events. 
 
@@ -182,7 +179,6 @@ The plot below shows the empirical distribution of out permutation test statisti
   height="600"
   frameborder="0"
 ></iframe>
-
 # Framing a Prediction Problem
 The predictions problem I will explore is **Can we predict the duration of a major outage given information available at or near the time the outage begin?**
 
