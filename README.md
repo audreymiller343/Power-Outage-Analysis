@@ -1,4 +1,5 @@
 # A Data Analysis of Power Outages
+Author: Audrey Miller
 
 # Introduction
 
