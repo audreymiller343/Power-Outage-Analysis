@@ -4,7 +4,7 @@
 
 In this Project I will explore data on major power outage events in the continental U.S. The data is from major power outages witnessed by various states during January 2000-July 2016. The outages dataset contains outages that impacted at least 50,000 customers or caused an unplanned firm load loss of at least 300 MW. The dataset also contains various factors such as geographical locations, electricity consumption, economic characteristics, causes, and regional climatic info.
 
-The dataset was accessed from Purdue University’s Laboratory for Advancing Sustainable Critical Infrastructure at https://engineering.purdue.edu/LASCI/research-data/outages. Throughout this project, we will explore the following question: Which factors are most strongly associated with the duration of major power outages in the United States? We can answer this question through data cleaning and exploratory data analysis. After we can build a predictive model to predict the duration of a major power outage as a measure of its severity  
+The dataset was accessed from Purdue University’s Laboratory for Advancing Sustainable Critical Infrastructure at https://engineering.purdue.edu/LASCI/research-data/outages. Throughout this project, we will explore the following question: **Which factors are most strongly associated with the duration of major power outages in the United States?** We can answer this question through data cleaning and exploratory data analysis. After we can build a predictive model to predict the duration of a major power outage as a measure of its severity  
 
 The insights we gain from this data is important to everyone, including communities, businesses, and essential services. The question I am exploring may prevent future outages and provide insights into why they occur. Understanding this relationship can help utility companies focus on upgrades or repairs to existing power grids or on how they may be able to prevent the next outage. Along with this, we can identify high-risk areas and the causes to prevent future outages.
 
@@ -56,7 +56,7 @@ The first few rows of the cleaned DataFrame are shown below with some columns sh
 
 ## Exploratory Data Analysis 
 ### Univariate Analysis
-In my exploratory data analysis I first looked at a univariate analysis to see the frequency of outages based on the category they are under. 
+To begin my exploratory data analysis, I first examined the distribution of major power outages acroess cause categories to understand the cause of most power outages in the U.S. As shown below the leading cause was severe weather with intentional attacks following as second. 
 
 <iframe
   src="assets/outage_per_cause.html"
@@ -65,7 +65,7 @@ In my exploratory data analysis I first looked at a univariate analysis to see t
   frameborder="0"
 ></iframe>
 
-I also looked at how the number of outages changed in each climate region.
+Next, I examined how major power outages are distributed across the U.S. climate regions to understand whether geography plays a role in outage frequency. The bar chart shows how Northeast and South regions experience the highest number of outages while the West North Central and Southwest experience the least. 
 
 <iframe
   src="assets/outage_per_region.html"
@@ -75,8 +75,9 @@ I also looked at how the number of outages changed in each climate region.
 ></iframe>
 
 ### Bivariate Analysis
-For the bivariate analysis I tested how different features affected each other but the ones I found most interesting are found below. 
-For the first graph I looked at the relationship between outage duration and number of customers affected to examine their relationship. 
+Moving into bivariate analysis, I tested how different features affected each other but the ones I found most interesting are found below. 
+
+The first plot examines the relationship between outage duration and the number of customers affected, colored by category. The lack of strong linear relationship suggests that outage does not necessarily determine how long it takes to restore power. Hovering over individual points also reveals how certain states have more extreme values. 
 
 <iframe
   src="assets/duration_vs_customer.html"
@@ -85,7 +86,7 @@ For the first graph I looked at the relationship between outage duration and num
   frameborder="0"
 ></iframe>
 
-Another relationship I found interesting was the number of customers affected and the cause category. 
+The second plot uses a box plot to compare the number of customers affected across each cause category. Severe weather and system operability disruptions show the greatest spread with the highest outliers. The graph also reveals how intentional attacks are frequent though they are typically smaller in scale. 
 
 <iframe
   src="assets/num_customer_category.html"
@@ -95,7 +96,7 @@ Another relationship I found interesting was the number of customers affected an
 ></iframe>
 
 ### Interesting Grouping
-A group that I found interesting was a table showing which causes lead to the most people affected aggregated by mean, median, and count. 
+To further understand the relationship between cause category and outage impact, I aggregated the number of customers affected by cause category using the mean, median, and count. One thing I found interesting is how system operability has the largest mean yet the median is only 69,000 showing how large outliers pull the mean up. 
 
 | CAUSE.CATEGORY                | mean       | median   | count|
 |-------------------------------|------------|----------|------|
@@ -139,7 +140,7 @@ The plot below shows the empirical distribution of the permutation test statisti
   frameborder="0"
 ></iframe>
 
-## Test 2: OUTAGE.DURATION Missingness vs. CAUSE.CATEGORY
+### Test 2: OUTAGE.DURATION Missingness vs. CAUSE.CATEGORY
 
 ### Null Hypothesis:
 The missingness of `OUTAGE.DURATION` is independent of `CAUSE.CATEGORY`.
