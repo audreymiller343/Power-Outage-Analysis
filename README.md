@@ -207,7 +207,7 @@ itself would not be known at prediction time, which is why it is our target.
 
 My baseline model is a linear regression model that predicts `OUTAGE.DURATION` using three features: `CAUSE.CATEGORY` (nominal), `CLIMATE.REGION` (nominal), and `ANOMALY.LEVEL` (quantitative). All the steps for the model were implemented using a single sklearn pipeline with a ColumnTransformer for preprocessing. THe two categorical features were encoded using OneHotEncoding, which creates a binary column for each unique category value filled with 1 if the row belongs to that category and 0 otherwise. THe quantitative feature `ANOMALY.LEVEL` was passed through as is since it is already a numerical feature. 
 
-I choose these three features because: 
+I chose these three features because: 
 
 - `CAUSE.CATEGORY`: The cause of an outage is one of the strongest indicators of how long an outage will last. For example, severe weather outages tend to involve widespread damage that takes much longer to repair compared to intentional attacks or equipment failure. Both of which may be more localized and quicker to resolve. 
 
