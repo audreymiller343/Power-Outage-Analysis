@@ -77,19 +77,23 @@ I also looked at how the number of outages changed in each climate region.
 ### Bivariate Analysis
 For the bivariate analysis I tested how different features affected each other but the ones I found most interesting are found below. 
 For the first graph I looked at the relationship between outage duration and number of customers affected to examine their relationship. 
+
 <iframe
   src="assets/duration_vs_customer.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 Another relationship I found interesting was the number of customers affected and the cause category. 
+
 <iframe
   src="assets/num_customer_category.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 ### Interesting Grouping
 A group that I found interesting was a table showing which causes lead to the most people affected aggregated by mean, median, and count. 
 
@@ -131,9 +135,10 @@ The plot below shows the empirical distribution of the permutation test statisti
 <iframe
   src="assets/missing_year.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 ## Test 2: OUTAGE.DURATION Missingness vs. CAUSE.CATEGORY
 
 ### Null Hypothesis:
@@ -155,9 +160,10 @@ The plot below shows the empirical distribution of TVD statistics from out permu
 <iframe
   src="assets/missing_cause_category.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 # Hypothesis Testing
 In order to determine whether certain climate regions experience higher frequency of severe weather outages I performed a permutation test comparing the proportion of severe weather outages across all climate regions. This question is important since different regions across the U.S. have vastly different weather patterns, infrastructure, and geographic characteristics. If certain regions experience more severe outages this could help utility companies better handle resources and prepare for these events. 
 
@@ -180,9 +186,10 @@ The plot below shows the empirical distribution of out permutation test statisti
 <iframe
   src="assets/hypothesis_severe.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 # Framing a Prediction Problem
 The predictions problem I will explore is **Can we predict the duration of a major outage given information available at or near the time the outage begin?**
 
@@ -274,6 +281,6 @@ The plot below shows the empirical distribution of our permutation test statisti
 <iframe
   src="assets/fairness_permutation.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
