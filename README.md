@@ -154,7 +154,7 @@ Total Variation Distance (TVD), since `CAUSE.CATEGORY` is categorical.
 Significance Level: 0.05
 
 ### Results: 
-From our permutation test with 10,000 repetitions we got a very small p-value, far below 0.05, so we reject the null hypothesis. This suggests that the missingness of `OUTAGE.DURATION` does depend on `CAUSE.CATEGORY` or that certain categories are more liekly to have missing duration data than other. 
+From our permutation test with 1000 repetitions we got a very small p-value, far below 0.05, so we reject the null hypothesis. This suggests that the missingness of `OUTAGE.DURATION` does depend on `CAUSE.CATEGORY` or that certain categories are more liekly to have missing duration data than other. 
 
 The plot below shows the empirical distribution of TVD statistics from out permutation test. The red line marks our observed TVD, which falls far to the right of the distribution, meaning that the observed difference in `CAUSE.CATEGORY` distributions between missing and non-missing `OUTAGE.DURATION` groups is extremely unlikely to occur by chance. This plot also confirms why we reject the null hypothesis visually. 
 
