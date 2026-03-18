@@ -269,6 +269,7 @@ The absolute difference in RMSE between the two groups. We use RMSE as out evalu
 I performed a permutation test with 1000 repetitions with a significance level of 0.05. I got a p-value of 0.381, which is well above out significance level, so we fail to reject the null hypothesis. This suggests that the difference in RMSE between severe weather and non-severe weather outages is not statistically significant and could be due to chance. Our model seems to appear fairly across both groups. Our model also performs better on severe weather outages likely due to more training examples. 
 
 The plot below shows the empirical distribution of our permutation test statistic with the red line marking our observed absolute difference. The observed value falls within the distribution confirming our results.  
+
 <iframe
   src="assets/fairness_permutation.html"
   width="800"
