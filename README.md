@@ -58,14 +58,14 @@ The first few rows of the cleaned DataFrame are shown below with some columns sh
 ### Univariate Analysis
 In my exploratory data analysis I first looked at a univariate analysis to see the frequency of outages based on the category they are under. 
 <iframe
-  src="outage_per_cause.html"
+  src="assets/outage_per_cause.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 I also looked at how the number of outages changed in each climate region.
 <iframe
-  src="outage_per_region.html"
+  src="assets/outage_per_region.html"
   width="800"
   height="600"
   frameborder="0"
@@ -75,14 +75,14 @@ I also looked at how the number of outages changed in each climate region.
 For the bivariate analysis I tested how different features affected each other but the ones I found most interesting are found below. 
 For the first graph I looked at the relationship between outage duration and number of customers affected to examine their relationship. 
 <iframe
-  src="duration_vs_customer.html"
+  src="assets/duration_vs_customer.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 Another relationship I found interesting was the number of customers affected and the cause category. 
 <iframe
-  src="num_customer_category.html"
+  src="assets/num_customer_category.html"
   width="800"
   height="600"
   frameborder="0"
@@ -126,7 +126,7 @@ From the permutation test with 1000 repetitions I got a p-value above 0.05, so w
 The plot below shows the empirical distribution of the permutation test statistic with the red line showing out observed statistic falling within the distribution, confirming no dependency on `YEAR`
 
 <iframe
-  src="missing_year.html"
+  src="assets/missing_year.html"
   width="800"
   height="600"
   frameborder="0"
@@ -151,7 +151,7 @@ From our permutation test with 10,000 repetitions we got a very small p-value, f
 The plot below shows the empirical distribution of TVD statistics from out permutation test. The red line marks our observed TVD, which falls far to the right of the distribution, meaning that the observed difference in `CAUSE.CATEGORY` distributions between missing and non-missing `OUTAGE.DURATION` groups is extremely unlikely to occur by chance. This plot also confirms why we reject the null hypothesis visually. 
 
 <iframe
-  src="missing_cause_category.html"
+  src="assets/missing_cause_category.html"
   width="800"
   height="600"
   frameborder="0"
@@ -177,7 +177,7 @@ After performing the permutation test, the p-value was consistently below 0.05 s
 The plot below shows the empirical distribution of out permutation test statistic with the red line marking out observed test statistic far in the tail of the distribution
 
 <iframe
-  src="hypothesis_severe.html"
+  src="assets/hypothesis_severe.html"
   width="800"
   height="600"
   frameborder="0"
