@@ -57,19 +57,23 @@ The first few rows of the cleaned DataFrame are shown below with some columns sh
 ## Exploratory Data Analysis 
 ### Univariate Analysis
 In my exploratory data analysis I first looked at a univariate analysis to see the frequency of outages based on the category they are under. 
+
 <iframe
   src="assets/outage_per_cause.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 I also looked at how the number of outages changed in each climate region.
+
 <iframe
   src="assets/outage_per_region.html"
   width="800"
-  height="600"
+  height="400"
   frameborder="0"
 ></iframe>
+
 ### Bivariate Analysis
 For the bivariate analysis I tested how different features affected each other but the ones I found most interesting are found below. 
 For the first graph I looked at the relationship between outage duration and number of customers affected to examine their relationship. 
