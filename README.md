@@ -89,6 +89,7 @@ Another relationship I found interesting was the number of customers affected an
 ></iframe>
 ### Interesting Grouping
 A group that I found interesting was a table showing which causes lead to the most people affected aggregated by mean, median, and count. 
+
 | CAUSE.CATEGORY                | mean       | median   | count|
 |-------------------------------|------------|----------|------|
 | system operability disruption | 211066.02  | 69000.0  | 83   |
